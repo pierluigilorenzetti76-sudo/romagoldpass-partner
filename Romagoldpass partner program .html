@@ -1,0 +1,1297 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Roma Gold Pass — Partner Program 2025</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --w:       #FDFCFA;
+  --iv:      #F8F5EF;
+  --sa:      #EDE7DB;
+  --sa2:     #D5CCBA;
+  --ch:      #181614;
+  --ch2:     #2E2B27;
+  --ch3:     #524E48;
+  --ch4:     #8A857D;
+  --go:      #B5913F;
+  --go2:     #CEAD60;
+  --gop:     #F0E6CC;
+  --gof:     #FAF5E8;
+  --fd:      'Cormorant Garamond', Georgia, serif;
+  --fb:      'Plus Jakarta Sans', system-ui, sans-serif;
+  --ease:    cubic-bezier(0.16,1,0.3,1);
+  --r:       14px;
+  --rl:      22px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--fb);background:var(--w);color:var(--ch);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+
+/* UTIL */
+.wrap{max-width:1120px;margin:0 auto;padding:0 52px}
+@media(max-width:768px){.wrap{padding:0 20px}}
+.label{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--go);margin-bottom:18px}
+.h2{font-family:var(--fd);font-size:clamp(36px,5vw,60px);font-weight:300;line-height:1.08;color:var(--ch);letter-spacing:-.01em}
+.h2 em{font-style:italic;color:var(--go)}
+.rule{width:40px;height:2px;background:var(--go);margin:22px 0 28px}
+.sub{font-size:17px;line-height:1.72;color:var(--ch3);max-width:520px}
+section{padding:108px 0}
+
+/* BUTTONS */
+.btn-dark{display:inline-flex;align-items:center;gap:9px;background:var(--ch);color:#fff;padding:14px 28px;border-radius:100px;font-size:14px;font-weight:600;text-decoration:none;letter-spacing:.01em;transition:background .2s,transform .15s,box-shadow .2s;box-shadow:0 4px 20px rgba(0,0,0,.18)}
+.btn-dark:hover{background:var(--go);transform:translateY(-2px);box-shadow:0 8px 32px rgba(181,145,63,.35)}
+.btn-gold{display:inline-flex;align-items:center;gap:9px;background:var(--go);color:#fff;padding:14px 28px;border-radius:100px;font-size:14px;font-weight:600;text-decoration:none;transition:background .2s,transform .15s,box-shadow .2s;box-shadow:0 4px 24px rgba(181,145,63,.3)}
+.btn-gold:hover{background:var(--go2);transform:translateY(-2px);box-shadow:0 10px 36px rgba(181,145,63,.45)}
+.btn-out{display:inline-flex;align-items:center;gap:9px;background:transparent;color:var(--ch);padding:13px 28px;border-radius:100px;font-size:14px;font-weight:600;text-decoration:none;border:1.5px solid var(--sa2);transition:border-color .2s,background .2s,transform .15s}
+.btn-out:hover{border-color:var(--go);background:var(--gof);transform:translateY(-2px)}
+.btn-out-w{display:inline-flex;align-items:center;gap:9px;background:transparent;color:rgba(255,255,255,.8);padding:13px 28px;border-radius:100px;font-size:14px;font-weight:600;text-decoration:none;border:1.5px solid rgba(255,255,255,.2);transition:border-color .2s,color .2s,transform .15s}
+.btn-out-w:hover{border-color:rgba(255,255,255,.65);color:#fff;transform:translateY(-2px)}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:18px 52px;background:rgba(253,252,250,.92);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid rgba(181,145,63,.1);transition:padding .3s}
+@media(max-width:768px){nav{padding:14px 20px}}
+.nl{display:flex;align-items:center;gap:10px;text-decoration:none}
+.nm{width:34px;height:34px;border-radius:9px;background:linear-gradient(135deg,var(--go),var(--go2));display:flex;align-items:center;justify-content:center;font-family:var(--fd);font-size:16px;color:#fff;font-weight:500}
+.nt{font-size:14px;font-weight:700;color:var(--ch)}
+.nt span{color:var(--go)}
+.nr{display:flex;align-items:center;gap:28px}
+.nlinks{display:flex;gap:28px;list-style:none}
+.nlinks a{font-size:13px;font-weight:500;color:var(--ch4);text-decoration:none;transition:color .2s}
+.nlinks a:hover{color:var(--ch)}
+@media(max-width:920px){.nlinks{display:none}}
+
+/* HERO */
+#hero{min-height:100vh;padding:0;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;overflow:hidden;background:var(--w)}
+.hbg{position:absolute;inset:0;background:radial-gradient(ellipse 90% 55% at 50% -5%,rgba(181,145,63,.08) 0%,transparent 65%),radial-gradient(ellipse 50% 35% at 92% 88%,rgba(181,145,63,.05) 0%,transparent 55%)}
+.htx{position:absolute;inset:0;opacity:.022;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E");background-size:200px}
+.hi{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;text-align:center;padding:140px 52px 80px;max-width:880px;animation:fu .9s var(--ease) forwards;opacity:0;transform:translateY(28px)}
+@media(max-width:768px){.hi{padding:110px 20px 60px}}
+@keyframes fu{to{opacity:1;transform:translateY(0)}}
+.hbadge{display:inline-flex;align-items:center;gap:9px;background:var(--gop);border:1px solid rgba(181,145,63,.25);border-radius:100px;padding:7px 18px;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--go);margin-bottom:40px}
+.hdot{width:6px;height:6px;border-radius:50%;background:var(--go);animation:bl 2s ease infinite}
+@keyframes bl{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.75)}}
+.hh1{font-family:var(--fd);font-size:clamp(48px,7.5vw,96px);font-weight:300;line-height:1.04;color:var(--ch);letter-spacing:-.015em;margin-bottom:26px}
+.hh1 em{font-style:italic;color:var(--go)}
+.hsub{font-size:clamp(16px,2vw,19px);font-weight:400;color:var(--ch3);line-height:1.65;max-width:600px;margin:0 auto 50px}
+.hbtns{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-bottom:72px}
+.hmet{display:flex;gap:0;flex-wrap:wrap;justify-content:center;border:1px solid var(--sa);border-radius:var(--rl);overflow:hidden;background:var(--w);box-shadow:0 4px 32px rgba(0,0,0,.06);animation:fu .9s .18s var(--ease) forwards;opacity:0}
+.met{padding:22px 34px;text-align:center;border-right:1px solid var(--sa);transition:background .2s}
+.met:last-child{border-right:none}
+.met:hover{background:var(--iv)}
+.metn{font-family:var(--fd);font-size:32px;font-weight:300;color:var(--ch);line-height:1;margin-bottom:5px}
+.metl{font-size:11px;font-weight:600;color:var(--ch4);letter-spacing:.04em}
+@media(max-width:600px){.met{padding:16px 18px}.metn{font-size:24px}}
+
+/* WHAT */
+#what{background:var(--iv)}
+.wg{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+@media(max-width:860px){.wg{grid-template-columns:1fr;gap:48px}}
+.wr{display:flex;flex-direction:column;gap:18px}
+.wcard{display:flex;align-items:flex-start;gap:18px;background:var(--w);border:1px solid var(--sa);border-radius:var(--r);padding:22px 24px;transition:transform .25s var(--ease),box-shadow .25s,border-color .25s}
+.wcard:hover{transform:translateX(6px);border-color:rgba(181,145,63,.3);box-shadow:0 6px 28px rgba(0,0,0,.06)}
+.wic{width:40px;height:40px;border-radius:10px;flex-shrink:0;background:var(--gof);border:1px solid rgba(181,145,63,.18);display:flex;align-items:center;justify-content:center;font-size:17px}
+.wtit{font-size:15px;font-weight:600;color:var(--ch);margin-bottom:4px}
+.wdsc{font-size:13px;color:var(--ch4);line-height:1.6}
+
+/* PASSES */
+#passes{background:var(--w)}
+.passes-header{margin-bottom:60px}
+.passes-intro{font-size:15px;color:var(--ch3);line-height:1.75;max-width:640px;margin-top:0}
+
+/* PASS LINE LEGEND */
+.line-legend{display:flex;gap:24px;flex-wrap:wrap;margin-bottom:48px}
+.ll{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:var(--ch3)}
+.ll-dot{width:12px;height:12px;border-radius:3px;flex-shrink:0}
+.ll-gold{background:linear-gradient(135deg,var(--go),var(--go2))}
+.ll-venus{background:linear-gradient(135deg,#7B6B9E,#A090C0)}
+.ll-ciao{background:linear-gradient(135deg,#4A7C6F,#6BAE9D)}
+
+/* PASS CARDS GRID */
+.passes-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+@media(max-width:1000px){.passes-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.passes-grid{grid-template-columns:1fr}}
+
+.pcard{border:1px solid var(--sa);border-radius:var(--rl);overflow:hidden;display:flex;flex-direction:column;background:var(--w);transition:transform .3s var(--ease),box-shadow .3s,border-color .3s;position:relative}
+.pcard:hover{transform:translateY(-7px);box-shadow:0 20px 56px rgba(0,0,0,.09);border-color:rgba(181,145,63,.28)}
+.pcard.feat{background:var(--ch);border-color:var(--go)}
+.pcard.feat:hover{box-shadow:0 24px 64px rgba(0,0,0,.22)}
+
+.pop-tag{position:absolute;top:18px;right:18px;background:var(--go);color:#fff;font-size:10px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;padding:4px 12px;border-radius:100px}
+
+/* line badge on card */
+.line-badge{display:inline-flex;align-items:center;gap:6px;padding:4px 12px;border-radius:100px;font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin-bottom:12px}
+.lb-gold{background:rgba(181,145,63,.12);color:var(--go);border:1px solid rgba(181,145,63,.2)}
+.lb-venus{background:rgba(123,107,158,.1);color:#7B6B9E;border:1px solid rgba(123,107,158,.2)}
+.lb-ciao{background:rgba(74,124,111,.1);color:#4A7C6F;border:1px solid rgba(74,124,111,.2)}
+.pcard.feat .lb-gold{background:rgba(181,145,63,.2);border-color:rgba(181,145,63,.4)}
+
+.ph{padding:32px 28px 20px}
+.pdays{font-family:var(--fd);font-size:42px;font-weight:300;line-height:1;color:var(--ch);margin-bottom:6px}
+.pdays span{font-size:17px;font-weight:500;color:var(--go)}
+.pcard.feat .pdays{color:var(--w)}
+.pname{font-size:15px;font-weight:700;color:var(--ch);margin-bottom:4px}
+.pcard.feat .pname{color:rgba(255,255,255,.9)}
+.pdesc{font-size:13px;color:var(--ch4);line-height:1.55;min-height:36px}
+.pcard.feat .pdesc{color:rgba(255,255,255,.42)}
+.pprice-row{margin-top:18px;padding-top:18px;border-top:1px solid var(--sa);display:flex;align-items:baseline;gap:6px}
+.pcard.feat .pprice-row{border-top-color:rgba(255,255,255,.1)}
+.pcurr{font-size:15px;font-weight:600;color:var(--ch4)}
+.pcard.feat .pcurr{color:rgba(255,255,255,.35)}
+.pprice{font-family:var(--fd);font-size:36px;font-weight:300;color:var(--ch);line-height:1}
+.pcard.feat .pprice{color:var(--w)}
+.pcard.feat .pcurr{color:rgba(255,255,255,.4)}
+.pfrom{font-size:11px;color:var(--ch4);margin-bottom:1px}
+.pcard.feat .pfrom{color:rgba(255,255,255,.3)}
+
+.pfeats{padding:0 28px 28px;flex:1;display:flex;flex-direction:column;gap:10px}
+.pf{display:flex;align-items:flex-start;gap:11px;font-size:13px;color:var(--ch3);line-height:1.5}
+.pcard.feat .pf{color:rgba(255,255,255,.68)}
+.pfck{width:20px;height:20px;border-radius:50%;flex-shrink:0;margin-top:1px;background:rgba(181,145,63,.1);border:1px solid rgba(181,145,63,.22);display:flex;align-items:center;justify-content:center;color:var(--go);font-size:10px}
+.pcard.feat .pfck{background:rgba(181,145,63,.18);border-color:rgba(181,145,63,.38)}
+
+.pctaw{padding:0 28px 28px;margin-top:auto}
+.pcta-d{display:block;text-align:center;background:var(--ch);color:#fff;padding:12px;border-radius:100px;font-size:13px;font-weight:600;text-decoration:none;transition:background .2s,transform .15s}
+.pcta-d:hover{background:var(--go);transform:translateY(-2px)}
+.pcta-g{display:block;text-align:center;background:var(--go);color:#fff;padding:12px;border-radius:100px;font-size:13px;font-weight:600;text-decoration:none;box-shadow:0 4px 20px rgba(181,145,63,.3);transition:background .2s,transform .15s}
+.pcta-g:hover{background:var(--go2);transform:translateY(-2px)}
+.pcta-v{display:block;text-align:center;background:#7B6B9E;color:#fff;padding:12px;border-radius:100px;font-size:13px;font-weight:600;text-decoration:none;transition:background .2s,transform .15s}
+.pcta-v:hover{background:#8E7EB6;transform:translateY(-2px)}
+.pcta-c{display:block;text-align:center;background:#4A7C6F;color:#fff;padding:12px;border-radius:100px;font-size:13px;font-weight:600;text-decoration:none;transition:background .2s,transform .15s}
+.pcta-c:hover{background:#5E9E8F;transform:translateY(-2px)}
+
+/* DIGITAL BONUS */
+#bonus{background:var(--iv)}
+.bonus-layout{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+@media(max-width:860px){.bonus-layout{grid-template-columns:1fr;gap:48px}}
+.bonus-cards{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:480px){.bonus-cards{grid-template-columns:1fr}}
+.bcard{background:var(--w);border:1px solid var(--sa);border-radius:var(--r);padding:26px 22px;transition:transform .25s var(--ease),box-shadow .25s,border-color .25s}
+.bcard:hover{transform:translateY(-5px);border-color:rgba(181,145,63,.3);box-shadow:0 10px 32px rgba(0,0,0,.07)}
+.bcard-icon{font-size:26px;margin-bottom:14px}
+.bcard-title{font-size:14px;font-weight:700;color:var(--ch);margin-bottom:6px}
+.bcard-desc{font-size:12px;color:var(--ch4);line-height:1.6}
+.bcard.span2{grid-column:span 2;display:flex;align-items:center;gap:20px}
+@media(max-width:480px){.bcard.span2{grid-column:span 1;flex-direction:column;align-items:flex-start}}
+
+/* PARTNER PROGRAM */
+#partner{background:var(--ch)}
+#partner .label{color:var(--go2)}
+#partner .h2{color:#fff}
+#partner .h2 em{color:var(--go2)}
+#partner .sub{color:rgba(255,255,255,.45)}
+.pp-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;margin-top:64px}
+@media(max-width:860px){.pp-grid{grid-template-columns:1fr;gap:48px}}
+.who-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:32px}
+.wc{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:var(--r);padding:20px 18px;transition:background .2s,border-color .2s}
+.wc:hover{background:rgba(181,145,63,.08);border-color:rgba(181,145,63,.2)}
+.wci{font-size:20px;margin-bottom:10px}
+.wcn{font-size:14px;font-weight:600;color:rgba(255,255,255,.85);margin-bottom:3px}
+.wcd{font-size:12px;color:rgba(255,255,255,.32);line-height:1.6}
+.cbox{background:linear-gradient(135deg,rgba(181,145,63,.14),rgba(181,145,63,.04));border:1px solid rgba(181,145,63,.25);border-radius:var(--rl);padding:38px 34px}
+.cbox-title{font-family:var(--fd);font-size:26px;font-weight:300;color:#fff;margin-bottom:26px;line-height:1.2}
+.cbox-title em{font-style:italic;color:var(--go2)}
+.csteps{display:flex;flex-direction:column;gap:0}
+.cst{display:flex;gap:16px;align-items:flex-start;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.07)}
+.cst:last-child{border-bottom:none}
+.cstn{width:30px;height:30px;border-radius:50%;flex-shrink:0;background:rgba(181,145,63,.15);border:1px solid rgba(181,145,63,.3);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:var(--go2)}
+.cstt{font-size:14px;font-weight:600;color:rgba(255,255,255,.85);margin-bottom:4px}
+.cstd{font-size:13px;color:rgba(255,255,255,.35);line-height:1.6}
+.link-ex{margin-top:26px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:14px 18px;display:flex;align-items:center;gap:12px}
+.lex-lbl{font-size:10px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--go2);margin-bottom:4px}
+.lex-url{font-size:12px;font-family:monospace;color:rgba(255,255,255,.5)}
+
+/* COMMISSION TABLE */
+#commission{background:var(--iv)}
+.comm-intro{max-width:580px;margin-bottom:16px}
+.comm-note{font-size:14px;color:var(--ch3);line-height:1.7;max-width:680px;margin-bottom:52px;padding:20px 24px;background:var(--w);border:1px solid var(--sa);border-radius:var(--r);border-left:3px solid var(--go)}
+
+/* TABLE */
+.ctable{border:1px solid var(--sa);border-radius:var(--rl);overflow:hidden;box-shadow:0 4px 32px rgba(0,0,0,.05)}
+.cthead{display:grid;grid-template-columns:1.8fr 1fr 1fr 1.4fr 2fr;background:var(--ch);padding:17px 30px;gap:14px}
+@media(max-width:860px){.cthead{display:none}}
+.cth{font-size:11px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:rgba(255,255,255,.35)}
+.ctrow{display:grid;grid-template-columns:1.8fr 1fr 1fr 1.4fr 2fr;padding:20px 30px;gap:14px;border-bottom:1px solid var(--sa);background:var(--w);align-items:center;transition:background .2s}
+.ctrow:last-child{border-bottom:none}
+.ctrow:hover{background:var(--gof)}
+.ctrow.hl{background:var(--gof);border-left:3px solid var(--go)}
+@media(max-width:860px){
+  .ctrow{grid-template-columns:1fr;padding:18px 20px;gap:7px}
+  .ctrow.hl{border-left:none;border-top:3px solid var(--go)}
+}
+.td{font-size:14px;color:var(--ch3)}
+.tdn{font-size:15px;font-weight:700;color:var(--ch)}
+.tdbadge{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:3px 10px;border-radius:100px;background:rgba(181,145,63,.1);color:var(--go);border:1px solid rgba(181,145,63,.18);margin-top:4px}
+.tdcomm{font-size:20px;font-weight:700;color:var(--go);font-family:var(--fd)}
+.tdpay{font-size:13px;font-weight:600;color:var(--ch3)}
+.tdpay small{display:block;font-weight:400;font-size:12px;color:var(--ch4);margin-top:2px}
+
+/* PAYMENT NOTE */
+.pay-note{margin-top:28px;padding:22px 28px;background:var(--w);border:1px solid var(--sa);border-radius:var(--r);display:flex;gap:20px;align-items:flex-start}
+.pnicon{font-size:22px;flex-shrink:0;margin-top:2px}
+.pntitle{font-size:14px;font-weight:700;color:var(--ch);margin-bottom:5px}
+.pndesc{font-size:13px;color:var(--ch4);line-height:1.65}
+
+/* HOW */
+#how{background:var(--w)}
+.how-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:32px;margin-top:56px;position:relative}
+.how-steps::before{content:'';position:absolute;top:27px;left:10%;width:80%;height:1px;background:linear-gradient(90deg,transparent,var(--sa2),transparent)}
+@media(max-width:860px){.how-steps{grid-template-columns:1fr 1fr}.how-steps::before{display:none}}
+@media(max-width:480px){.how-steps{grid-template-columns:1fr}}
+.hstep{text-align:center}
+.hsc{width:54px;height:54px;border-radius:50%;background:var(--w);border:1.5px solid var(--sa2);display:flex;align-items:center;justify-content:center;margin:0 auto 18px;font-size:20px;box-shadow:0 2px 12px rgba(0,0,0,.06);transition:border-color .2s,box-shadow .2s}
+.hstep:hover .hsc{border-color:var(--go);box-shadow:0 4px 20px rgba(181,145,63,.2)}
+.hst{font-size:15px;font-weight:700;color:var(--ch);margin-bottom:7px}
+.hsd{font-size:13px;color:var(--ch4);line-height:1.6}
+
+/* PARTNER TYPES */
+#who{background:var(--iv)}
+.ptgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:56px}
+@media(max-width:860px){.ptgrid{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.ptgrid{grid-template-columns:1fr}}
+.ptcard{background:var(--w);border:1px solid var(--sa);border-radius:var(--rl);padding:34px 28px;transition:transform .3s var(--ease),box-shadow .3s,border-color .3s}
+.ptcard:hover{transform:translateY(-6px);box-shadow:0 16px 48px rgba(0,0,0,.07);border-color:rgba(181,145,63,.28)}
+.ptic{font-size:26px;margin-bottom:18px}
+.ptn{font-size:17px;font-weight:700;color:var(--ch);margin-bottom:8px}
+.ptd{font-size:14px;color:var(--ch4);line-height:1.65;margin-bottom:20px}
+.ptperks{display:flex;flex-direction:column;gap:8px}
+.ptp{display:flex;align-items:center;gap:9px;font-size:13px;color:var(--ch3)}
+.ptp::before{content:'→';color:var(--go);font-weight:700;font-size:12px}
+
+/* FINAL CTA */
+#cta{background:var(--ch);padding:160px 52px;text-align:center;position:relative;overflow:hidden}
+#cta::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 50% at 50% 50%,rgba(181,145,63,.1) 0%,transparent 65%)}
+.ctai{position:relative;z-index:1}
+.ctak{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--go);margin-bottom:20px;display:block}
+.ctah{font-family:var(--fd);font-size:clamp(50px,8vw,94px);font-weight:300;color:#fff;line-height:1.02;letter-spacing:-.015em;margin-bottom:22px}
+.ctah em{font-style:italic;color:var(--go2)}
+.ctas{font-size:18px;color:rgba(255,255,255,.4);margin-bottom:48px;max-width:460px;margin-left:auto;margin-right:auto;line-height:1.65}
+.ctab{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:52px}
+.ctac{display:inline-flex;align-items:center;gap:9px;font-size:14px;color:rgba(255,255,255,.3)}
+.ctac a{color:rgba(255,255,255,.5);text-decoration:none;transition:color .2s}
+.ctac a:hover{color:var(--go2)}
+
+/* FOOTER */
+footer{background:var(--ch);padding:60px 52px 40px;border-top:1px solid rgba(255,255,255,.05)}
+@media(max-width:768px){footer{padding:48px 20px 32px}}
+.fg{display:flex;flex-wrap:wrap;gap:48px;justify-content:space-between;max-width:1120px;margin:0 auto}
+.fb{flex-shrink:0}
+.fl{display:flex;align-items:center;gap:10px;text-decoration:none;margin-bottom:13px}
+.flm{width:30px;height:30px;border-radius:7px;background:linear-gradient(135deg,var(--go),var(--go2));display:flex;align-items:center;justify-content:center;font-family:var(--fd);font-size:15px;color:#fff}
+.flt{font-size:13px;font-weight:700;color:#fff}
+.flt span{color:var(--go)}
+.ftag{font-size:13px;color:rgba(255,255,255,.27);line-height:1.55;max-width:210px;margin-bottom:14px}
+.fweb{font-size:13px;font-weight:600;color:var(--go2);text-decoration:none;transition:color .2s}
+.fweb:hover{color:var(--go)}
+.fsoc{display:flex;gap:9px;margin-top:16px}
+.fs{width:33px;height:33px;border-radius:50%;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.38);text-decoration:none;font-size:12px;transition:background .2s,color .2s}
+.fs:hover{background:rgba(181,145,63,.2);color:var(--go2)}
+.fcol h4{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.22);margin-bottom:16px}
+.fcol a{display:block;font-size:13px;color:rgba(255,255,255,.4);text-decoration:none;margin-bottom:9px;transition:color .2s}
+.fcol a:hover{color:rgba(255,255,255,.85)}
+.fbot{max-width:1120px;margin:36px auto 0;padding-top:22px;border-top:1px solid rgba(255,255,255,.05);display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:center}
+.fbl{font-size:12px;color:rgba(255,255,255,.18)}
+.fbr{display:flex;gap:20px}
+.fbr a{font-size:12px;color:rgba(255,255,255,.18);text-decoration:none;transition:color .2s}
+.fbr a:hover{color:rgba(255,255,255,.55)}
+
+/* REVEAL */
+.r{opacity:0;transform:translateY(20px);transition:opacity .65s var(--ease),transform .65s var(--ease)}
+.r.v{opacity:1;transform:translateY(0)}
+.r.d1{transition-delay:.07s}.r.d2{transition-delay:.14s}.r.d3{transition-delay:.21s}
+.r.d4{transition-delay:.28s}.r.d5{transition-delay:.35s}.r.d6{transition-delay:.42s}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="#" class="nl"><img src="data:image/png;base64,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" alt="Roma Gold Pass" style="height:44px;width:auto;display:block"></a>
+  <div class="nr">
+    <ul class="nlinks">
+      <li><a href="#passes">I Pass</a></li>
+      <li><a href="#bonus">Bonus Digitali</a></li>
+      <li><a href="#partner">Partner</a></li>
+      <li><a href="#commission" id="fcol2-l2">Commissioni</a></li>
+      <li><a href="https://www.romagoldpass.com" target="_blank">romagoldpass.com</a></li>
+    </ul>
+    <div style="display:flex;align-items:center;gap:0;background:var(--iv);border:1.5px solid var(--sa2);border-radius:100px;overflow:hidden">
+      <div id="btn-it" onclick="setLang('it')" style="display:flex;align-items:center;gap:6px;cursor:pointer;padding:7px 14px;transition:background .2s;background:var(--ch)">
+        <span style="font-size:15px">🇮🇹</span>
+        <span style="font-size:12px;font-weight:700;color:#fff;letter-spacing:.05em">IT</span>
+      </div>
+      <div id="btn-en" onclick="setLang('en')" style="display:flex;align-items:center;gap:6px;cursor:pointer;padding:7px 14px;transition:background .2s;background:transparent">
+        <span style="font-size:15px">🇬🇧</span>
+        <span style="font-size:12px;font-weight:700;color:var(--ch4);letter-spacing:.05em">EN</span>
+      </div>
+    </div>
+    <a href="https://romagoldpass.com/public/" target="_blank" class="btn-dark">Vai al sito</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hbg"></div>
+  <div class="htx"></div>
+  <div class="hi">
+    <div class="hbadge"><div class="hdot"></div><span id="hero-badge-text">Partner Program — Presentazione</span></div>
+    <h1 class="hh1" id="hero-h1">L'esperienza romana completa,<br><em>per i tuoi clienti.</em></h1>
+    <p class="hsub" id="hero-sub">Roma Gold Pass è la piattaforma digitale che trasforma l'esperienza romana dei tuoi clienti — e genera commissioni automatiche per te, con un semplice link dedicato. Zero costi iniziali, zero complessità.</p>
+    <div class="hbtns">
+      <a href="https://romagoldpass.com/public/contacts.php" target="_blank" class="btn-dark" id="hero-btn1">Richiedi Partnership →</a>
+      <a href="https://romagoldpass.com/public/" target="_blank" class="btn-out" id="hero-btn2">Scopri i Pass</a>
+    </div>
+    <div class="hmet">
+      <div class="met"><div class="metn">6</div><div class="metl">Pass disponibili</div></div>
+      <div class="met"><div class="metn">15%</div><div class="metl">Commissione media</div></div>
+      <div class="met"><div class="metn">100%</div><div class="metl">Link tracciato</div></div>
+      <div class="met"><div class="metn">6</div><div class="metl">Lingue supportate</div></div>
+      <div class="met"><div class="metn">24/7</div><div class="metl">Supporto clienti</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT IS -->
+<section id="what">
+  <div class="wrap">
+    <div class="wg">
+      <div class="r">
+        <span class="label" id="what-label">Il prodotto</span>
+        <h2 class="h2" id="what-h2">Una piattaforma.<br><em>Tutto incluso.</em></h2>
+        <div class="rule"></div>
+        <p class="sub" id="what-sub">Roma Gold Pass è la soluzione digitale all-in-one per chi visita Roma. Musei, trasporti, ristoranti selezionati e supporto locale — tutto accessibile da un'unica app in 6 lingue. Ogni cliente può costruire la propria esperienza in autonomia, partendo dalla base del pass scelto e personalizzandola secondo i propri interessi.</p>
+        <br><br>
+        <a href="https://www.romagoldpass.com" target="_blank" class="btn-out" id="what-site-btn">Visita romagoldpass.com ↗</a>
+      </div>
+      <div class="wr">
+        <div class="wcard r d1">
+          <div class="wic">🏛️</div>
+          <div><div class="wtit">Siti UNESCO — Prenotazioni riservate con slot orario</div><div class="wdsc">Colosseo, Foro Romano, Palatino, Musei Vaticani, Cappella Sistina, Pantheon, Castel Sant'Angelo. Prenotazioni garantite, zero code.</div></div>
+        </div>
+        <div class="wcard r d2">
+          <div class="wic">🚌</div>
+          <div><div class="wtit">Trasporto pubblico integrato</div><div class="wdsc">Metro, bus e tram ATAC illimitati per tutta la durata del pass. Validazione digitale, nessun biglietto cartaceo.</div></div>
+        </div>
+        <div class="wcard r d3">
+          <div class="wic">🍽️</div>
+          <div><div class="wtit">Food Card & Ristoranti selezionati</div><div class="wdsc">Sconti esclusivi in trattorie e ristoranti romani autentici. Una guida gastronomica curata da esperti locali, aggiornata continuamente.</div></div>
+        </div>
+        <div class="wcard r d4">
+          <div class="wic">🗺️</div>
+          <div><div class="wtit">Itinerari & Esperienze</div><div class="wdsc">Percorsi tematici, esperienze esclusive, accessi speciali. Roma come la vivono i romani, non come appare nelle guide tradizionali.</div></div>
+        </div>
+        <div class="wcard r d5">
+          <div class="wic">💬</div>
+          <div><div class="wtit">Supporto dedicato h24 — 6 lingue</div><div class="wdsc">Assistenza reale (non bot) sempre disponibile. Supporto in italiano, inglese, francese, spagnolo, tedesco e portoghese.</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PASSES -->
+<section id="passes">
+  <div class="wrap">
+    <div class="passes-header">
+      <span class="label r" id="passes-label">I pass ufficiali</span>
+      <h2 class="h2 r d1" id="passes-h2">Sei pass. <em>Ogni stile<br>di viaggio.</em></h2>
+      <div class="rule r d2"></div>
+      <p class="passes-intro sub r d2" id="passes-sub">Due linee, tre durate, sei opzioni. I tuoi clienti scelgono in autonomia il pass più adatto al loro soggiorno — direttamente online, dal loro dispositivo.</p>
+    </div>
+
+    <div class="line-legend r">
+      <div class="ll"><div class="ll-dot ll-gold"></div>Linea Gold — Vaticani inclusi</div>
+      <div class="ll"><div class="ll-dot ll-venus"></div>Linea Venus — Hop-on hop-off incluso</div>
+      <div class="ll"><div class="ll-dot ll-ciao"></div>Linea Entry — Flessibili, acquistabili last-minute</div>
+    </div>
+
+    <div class="passes-grid">
+
+      <!-- GOLD 48H -->
+      <div class="pcard feat r d1">
+        <div class="ph">
+          <div class="line-badge lb-gold">● Linea Gold</div>
+          <div class="pdays">48<span>h</span></div>
+          <div class="pname">Gold 48 — Roma Completa</div>
+          <div class="pdesc">L'esperienza romana definitiva per la maggior parte dei viaggiatori</div>
+          <div class="pprice-row">
+            <div>
+              <div class="pfrom">da</div>
+              <div style="display:flex;align-items:baseline;gap:5px">
+                <span class="pcurr">€</span>
+                <span class="pprice">120</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pfeats">
+          <div class="pf"><div class="pfck">✓</div>Colosseo, Foro Romano & Palatino</div>
+          <div class="pf"><div class="pfck">✓</div>Musei Vaticani & Cappella Sistina</div>
+          <div class="pf"><div class="pfck">✓</div>Trasporto pubblico illimitato 48h</div>
+          <div class="pf"><div class="pfck">✓</div>Sconti ristoranti selezionati</div>
+          <div class="pf"><div class="pfck">✓</div>Itinerari curati inclusi</div>
+          <div class="pf"><div class="pfck">✓</div>Supporto dedicato h24</div>
+        </div>
+        <div class="pctaw"><a href="https://romagoldpass.com/public/product.php?INT_IDPROD=1" target="_blank" class="pcta-g">Proponi ai tuoi clienti →</a></div>
+      </div>
+
+      <!-- GOLD 72H -->
+      <div class="pcard r d2">
+        <div class="ph">
+          <div class="line-badge lb-gold">● Linea Gold</div>
+          <div class="pdays">72<span>h</span></div>
+          <div class="pname">Gold 72 — Roma Totale</div>
+          <div class="pdesc">Per i viaggiatori che vogliono vivere Roma senza limiti di tempo</div>
+          <div class="pprice-row">
+            <div>
+              <div class="pfrom">da</div>
+              <div style="display:flex;align-items:baseline;gap:5px">
+                <span class="pcurr">€</span>
+                <span class="pprice">145</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pfeats">
+          <div class="pf"><div class="pfck">✓</div>Colosseo, Foro Romano & Palatino</div>
+          <div class="pf"><div class="pfck">✓</div>Musei Vaticani & Cappella Sistina</div>
+          <div class="pf"><div class="pfck">✓</div>Terzo museo a scelta del cliente</div>
+          <div class="pf"><div class="pfck">✓</div>Trasporto pubblico illimitato 72h</div>
+          <div class="pf"><div class="pfck">✓</div>Sconti ristoranti + Food Card</div>
+          <div class="pf"><div class="pfck">✓</div>Supporto dedicato h24</div>
+        </div>
+        <div class="pctaw"><a href="https://romagoldpass.com/public/product.php?INT_IDPROD=2" target="_blank" class="pcta-d">Proponi ai tuoi clienti →</a></div>
+      </div>
+
+      <!-- VENUS 48H -->
+      <div class="pcard r d3">
+        <div class="ph">
+          <div class="line-badge lb-venus">● Linea Venus</div>
+          <div class="pdays">48<span>h</span></div>
+          <div class="pname">Venus 48 — Arte & Città</div>
+          <div class="pdesc">Musei storici e trasporto panoramico incluso</div>
+          <div class="pprice-row">
+            <div>
+              <div class="pfrom">da</div>
+              <div style="display:flex;align-items:baseline;gap:5px">
+                <span class="pcurr">€</span>
+                <span class="pprice">70</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pfeats">
+          <div class="pf"><div class="pfck">✓</div>Colosseo, Foro Romano & Palatino</div>
+          <div class="pf"><div class="pfck">✓</div>Pantheon incluso</div>
+          <div class="pf"><div class="pfck">✓</div>Trasporto pubblico illimitato 48h</div>
+          <div class="pf"><div class="pfck">✓</div>Sconti ristoranti selezionati</div>
+          <div class="pf"><div class="pfck">✓</div>Supporto dedicato h24</div>
+        </div>
+        <div class="pctaw"><a href="https://romagoldpass.com/public/product.php?INT_IDPROD=12" target="_blank" class="pcta-v">Proponi ai tuoi clienti →</a></div>
+      </div>
+
+      <!-- VENUS 72H -->
+      <div class="pcard r d4">
+        <div class="ph">
+          <div class="line-badge lb-venus">● Linea Venus</div>
+          <div class="pdays">72<span>h</span></div>
+          <div class="pname">Venus 72 — Roma Panoramica</div>
+          <div class="pdesc">Hop-on hop-off + siti storici + trasporto illimitato</div>
+          <div class="pprice-row">
+            <div>
+              <div class="pfrom">da</div>
+              <div style="display:flex;align-items:baseline;gap:5px">
+                <span class="pcurr">€</span>
+                <span class="pprice">125</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pfeats">
+          <div class="pf"><div class="pfck">✓</div>Colosseo, Foro Romano & Palatino</div>
+          <div class="pf"><div class="pfck">✓</div>Castel Sant'Angelo & Pantheon</div>
+          <div class="pf"><div class="pfck">✓</div>Hop-on hop-off bus 24h incluso</div>
+          <div class="pf"><div class="pfck">✓</div>Trasporto pubblico illimitato 72h</div>
+          <div class="pf"><div class="pfck">✓</div>Sconti ristoranti + Food Card</div>
+        </div>
+        <div class="pctaw"><a href="https://romagoldpass.com/public/product.php?INT_IDPROD=13" target="_blank" class="pcta-v">Proponi ai tuoi clienti →</a></div>
+      </div>
+
+      <!-- CIAO 24H -->
+      <div class="pcard r d5">
+        <div class="ph">
+          <div class="line-badge lb-ciao">● Ciao Pass</div>
+          <div class="pdays">24<span>h</span></div>
+          <div class="pname">Ciao — Roma Essenziale</div>
+          <div class="pdesc">Flessibile, acquistabile fino al giorno prima. Perfetto per soggiorni brevi.</div>
+          <div class="pprice-row">
+            <div>
+              <div class="pfrom">da</div>
+              <div style="display:flex;align-items:baseline;gap:5px">
+                <span class="pcurr">€</span>
+                <span class="pprice">10</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pfeats">
+          <div class="pf"><div class="pfck">✓</div>1 esperienza a scelta del cliente</div>
+          <div class="pf"><div class="pfck">✓</div>Sconti ristoranti selezionati</div>
+          <div class="pf"><div class="pfck">✓</div>Acquistabile anche last-minute</div>
+          <div class="pf"><div class="pfck">✓</div>Supporto dedicato h24</div>
+        </div>
+        <div class="pctaw"><a href="https://romagoldpass.com/public/product.php?INT_IDPROD=9" target="_blank" class="pcta-c">Proponi ai tuoi clienti →</a></div>
+      </div>
+
+      <!-- CAESAR 24H -->
+      <div class="pcard r d6">
+        <div class="ph">
+          <div class="line-badge lb-ciao">● Caesar Pass</div>
+          <div class="pdays">24<span>h</span></div>
+          <div class="pname">Caesar — Roma in un giorno</div>
+          <div class="pdesc">Hop-on hop-off + museo a scelta. Ideale per viaggiatori in transito.</div>
+          <div class="pprice-row">
+            <div>
+              <div class="pfrom">da</div>
+              <div style="display:flex;align-items:baseline;gap:5px">
+                <span class="pcurr">€</span>
+                <span class="pprice">40</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pfeats">
+          <div class="pf"><div class="pfck">✓</div>Hop-on hop-off bus panoramico</div>
+          <div class="pf"><div class="pfck">✓</div>1 museo a scelta del cliente</div>
+          <div class="pf"><div class="pfck">✓</div>Sconti ristoranti selezionati</div>
+          <div class="pf"><div class="pfck">✓</div>Supporto dedicato h24</div>
+        </div>
+        <div class="pctaw"><a href="https://romagoldpass.com/public/product.php?INT_IDPROD=11" target="_blank" class="pcta-c">Proponi ai tuoi clienti →</a></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- DIGITAL BONUS -->
+<section id="bonus">
+  <div class="wrap">
+    <div class="bonus-layout">
+      <div class="r">
+        <span class="label" id="bonus-label">Valore aggiunto per i tuoi clienti</span>
+        <h2 class="h2" id="bonus-h2">Con ogni pass,<br><em>una guida digitale completa.</em></h2>
+        <div class="rule"></div>
+        <p class="sub" id="bonus-sub">Ogni cliente che acquista un Roma Gold Pass — attraverso il tuo link o autonomamente — riceve immediatamente accesso a un pacchetto di risorse digitali esclusive. Non solo un biglietto: un vero compagno di viaggio per vivere Roma senza imprevisti.</p>
+        <br>
+        <p style="font-size:14px;color:var(--ch4);line-height:1.7;" id="bonus-note">Questo bonus rafforza il valore percepito del prodotto che proponi ai tuoi clienti e contribuisce a differenziare la tua offerta da quella dei competitor.</p>
+      </div>
+      <div class="bonus-cards r d2">
+        <div class="bcard">
+          <div class="bcard-icon">🗺️</div>
+          <div class="bcard-title">Mappe interattive offline</div>
+          <div class="bcard-desc">Mappe di Roma ottimizzate per ogni pass, con tutti i siti inclusi, le fermate metro e i punti di interesse vicini. Funzionano anche senza connessione.</div>
+        </div>
+        <div class="bcard">
+          <div class="bcard-icon">🍽️</div>
+          <div class="bcard-title">Guida ristoranti curata</div>
+          <div class="bcard-desc">Selezione di ristoranti autentici divisi per quartiere e cucina, con indicazioni su orari, prenotazioni e sconti attivi con il pass.</div>
+        </div>
+        <div class="bcard">
+          <div class="bcard-icon">💡</div>
+          <div class="bcard-title">Tips & Consigli locali</div>
+          <div class="bcard-desc">Suggerimenti pratici su come muoversi, cosa evitare, i migliori orari per visitare i siti e i quartieri più autentici lontani dal turismo di massa.</div>
+        </div>
+        <div class="bcard">
+          <div class="bcard-icon">📍</div>
+          <div class="bcard-title">Itinerari tematici</div>
+          <div class="bcard-desc">Percorsi pre-costruiti per diversi profili di viaggiatore: famiglie, coppie, appassionati d'arte, fotografi, foodies. Adattabili alla durata del pass scelto.</div>
+        </div>
+        <div class="bcard span2">
+          <div class="bcard-icon" style="font-size:32px;flex-shrink:0">📱</div>
+          <div>
+            <div class="bcard-title">Accesso digitale immediato — nessuna stampa</div>
+            <div class="bcard-desc">Tutto viene consegnato digitalmente via email e app al momento dell'acquisto. I tuoi clienti trovano ogni informazione in un unico posto, consultabile dal proprio smartphone in qualsiasi momento del viaggio.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PARTNER PROGRAM -->
+<section id="partner">
+  <div class="wrap">
+    <div class="r">
+      <span class="label" id="partner-label">Partner Program</span>
+      <h2 class="h2" id="partner-h2">Un link e un codice.<br><em>Due strumenti, una sola partnership.</em></h2>
+      <div class="rule" style="background:var(--go)"></div>
+      <p class="sub" id="partner-sub">Ogni partner riceve due strumenti esclusivi: un link personalizzato e tracciato che genera commissioni automatiche ad ogni acquisto, e un codice sconto dedicato da offrire ai propri clienti con la massima libertà di utilizzo.</p>
+    </div>
+    <div class="pp-grid">
+      <div>
+        <p class="r" id="partner-desc" style="font-size:15px;color:rgba(255,255,255,.6);line-height:1.75;margin-bottom:30px">Lavoriamo con hotel, compagnie aeree, agenzie di viaggio, operatori DMC, concierge e travel advisor. Il programma partner è progettato per essere il più semplice possibile: il tuo cliente clicca il tuo link, acquista in autonomia, e la commissione viene registrata automaticamente.</p>
+        <div class="who-grid r">
+          <div class="wc"><div class="wci">🏨</div><div class="wcn">Hotel & Resort</div><div class="wcd">Il pass come servizio premium per gli ospiti, dal check-in</div></div>
+          <div class="wc"><div class="wci">✈️</div><div class="wcn">Compagnie aeree</div><div class="wcd">Add-on ideale per i passeggeri in rotta su Roma</div></div>
+          <div class="wc"><div class="wci">🗺️</div><div class="wcn">Agenzie di viaggio</div><div class="wcd">Inserisci il pass nei pacchetti Roma e aumenta il valore</div></div>
+          <div class="wc"><div class="wci">🎩</div><div class="wcn">Concierge & Advisor</div><div class="wcd">Strumenti white-label per clienti premium</div></div>
+          <div class="wc"><div class="wci">🌐</div><div class="wcn">DMC & Tour operator</div><div class="wcd">Condizioni B2B dedicate al volume e alla stagionalità</div></div>
+          <div class="wc"><div class="wci">📲</div><div class="wcn">Piattaforme digitali</div><div class="wcd">Integrazione via link, widget o API (livello Enterprise)</div></div>
+        </div>
+      </div>
+      <div class="r d2">
+        <div class="cbox">
+          <div class="cbox-title" id="cbox-title">Come funziona<br><em>il tuo link dedicato</em></div>
+          <div class="csteps">
+            <div class="cst"><div class="cstn">1</div><div><div class="cstt">Richiedi la partnership</div><div class="cstd">Scrivici per fissare un incontro conoscitivo. Ti risponderemo entro 24 ore lavorative.</div></div></div>
+            <div class="cst"><div class="cstn">2</div><div><div class="cstt">Ricevi il tuo link e il tuo codice sconto</div><div class="cstd">Ottieni un link personalizzato con tracciamento automatico e un codice sconto esclusivo da condividere con i tuoi clienti come preferisci: in reception, via email, nelle newsletter o sui tuoi canali social.</div></div></div>
+            <div class="cst"><div class="cstn">3</div><div><div class="cstt">Il cliente acquista in autonomia</div><div class="cstd">Il tuo cliente segue il link o inserisce il codice sconto, sceglie il pass più adatto e completa l'acquisto direttamente sul nostro sito. Nessun passaggio manuale richiesto da parte tua.</div></div></div>
+            <div class="cst"><div class="cstn">4</div><div><div class="cstt">La commissione è tua</div><div class="cstd">Ogni vendita tracciata viene registrata e liquidata secondo il piano concordato, trimestralmente, quadrimestralmente o sulla base di accordi specifici con il tuo livello partner.</div></div></div>
+          </div>
+          <div class="link-ex">
+            <div style="font-size:22px">🔗</div>
+            <div>
+              <div class="lex-lbl" id="link-lbl">Esempio link partner</div>
+              <div class="lex-url">romagoldpass.com/?ref=<strong style="color:var(--go2)">nomehotel</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMMISSION TABLE -->
+<section id="commission">
+  <div class="wrap">
+    <div class="comm-intro">
+      <span class="label r" id="comm-label">Struttura commissionale</span>
+      <h2 class="h2 r d1" id="comm-h2">Commissioni chiare.<br><em>Pagamenti garantiti.</em></h2>
+      <div class="rule r d2"></div>
+    </div>
+
+    <div class="comm-note r" id="comm-note">
+      <strong style="color:var(--ch)">Come vengono liquidate le commissioni.</strong> Le commissioni vengono corrisposte con cadenza <strong>trimestrale</strong> o <strong>quadrimestrale</strong>, in base all'accordo stipulato al momento dell'attivazione del profilo partner. Per volumi elevati o situazioni particolari è possibile concordare modalità di pagamento personalizzate. Ogni liquidazione è accompagnata da un rendiconto dettagliato delle vendite generate.
+    </div>
+
+    <div class="ctable r">
+      <div class="cthead">
+        <div class="cth">Livello partner</div>
+        <div class="cth">Vendite / periodo</div>
+        <div class="cth">Commissione</div>
+        <div class="cth">Liquidazione</div>
+        <div class="cth">Incluso nel livello</div>
+      </div>
+
+      <div class="ctrow">
+        <div><div class="tdn" id="tier1-name-el">Starter</div><div class="tdbadge" id="tier1-badge-el">Ingresso</div></div>
+        <div class="td" id="tier1-vol-el">1 – 100 pass / mese</div>
+        <div class="tdcomm">10%</div>
+        <div class="tdpay" id="tier1-pay-el">Trimestrale<small id="tier1-pay2-el">o quadrimestrale</small></div>
+        <div class="td" style="font-size:13px;color:var(--ch4)" id="tier1-inc-el">Link dedicato, codice sconto personalizzato, rendiconto vendite, materiali digitali</div>
+      </div>
+
+      <div class="ctrow hl">
+        <div><div class="tdn" id="tier2-name-el">Growth</div><div class="tdbadge" id="tier2-badge-el">Consigliato</div></div>
+        <div class="td" id="tier2-vol-el">100 – 200 pass / mese</div>
+        <div class="tdcomm">15%</div>
+        <div class="tdpay" id="tier2-pay-el">Trimestrale<small id="tier2-pay2-el">o quadrimestrale</small></div>
+        <div class="td" style="font-size:13px;color:var(--ch4)" id="tier2-inc-el">Kit marketing brandizzato, codice sconto dedicato, supporto prioritario, report mensili</div>
+      </div>
+
+      <div class="ctrow">
+        <div><div class="tdn" id="tier3-name-el">Elite</div><div class="tdbadge" id="tier3-badge-el">Volume</div></div>
+        <div class="td" id="tier3-vol-el">Oltre 200 pass / mese</div>
+        <div class="tdcomm">20%</div>
+        <div class="tdpay" id="tier3-pay-el">Previo accordo<small id="tier3-pay2-el">condizioni personalizzate</small></div>
+        <div class="td" style="font-size:13px;color:var(--ch4)" id="tier3-inc-el">Account manager dedicato, white-label, integrazione API</div>
+      </div>
+    </div>
+
+    <div class="pay-note r">
+      <div class="pnicon">📋</div>
+      <div>
+        <div class="pntitle" id="pay-note-title">Rendiconto trasparente ad ogni liquidazione</div>
+        <div class="pndesc" id="pay-note-desc">Ogni pagamento è accompagnato da un documento dettagliato che riporta numero di pass venduti, tipologia, data di acquisto e importo commissione maturato. Nessuna cifra approssimativa, solo dati precisi e verificabili. Per il livello Premium ed Elite è disponibile accesso a report periodici con analisi delle vendite e trend per ottimizzare la proposta ai tuoi clienti.</div>
+      </div>
+    </div>
+
+    <div class="pay-note r" style="margin-top:16px;border-left-color:#7B6B9E">
+      <div class="pnicon">🎟️</div>
+      <div>
+        <div class="pntitle" id="promo-title">Il tuo codice sconto personalizzato</div>
+        <div class="pndesc" id="promo-desc">Oltre al link tracciato, ogni partner riceve un codice sconto esclusivo da gestire in completa autonomia. Puoi usarlo per premiare i tuoi clienti abituali, inserirlo in una campagna promozionale, offrirlo come benefit al check-in o proporlo in qualsiasi altro modo ritieni più efficace per il tuo business. La percentuale di sconto e le condizioni vengono concordate insieme al momento dell'attivazione della partnership, su misura per il tuo profilo.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how">
+  <div class="wrap">
+    <div class="r" style="max-width:480px">
+      <span class="label" id="how-label">Come iniziare</span>
+      <h2 class="h2" id="how-h2">Attivo in<br><em>meno di 24 ore.</em></h2>
+      <div class="rule"></div>
+    </div>
+    <div class="how-steps">
+      <div class="hstep r d1"><div class="hsc">📝</div><div class="hst">Contattaci per un incontro</div><div class="hsd">Due minuti per inviarci i dati della tua struttura o azienda. Nessun contratto rigido, nessun costo di attivazione.</div></div>
+      <div class="hstep r d2"><div class="hsc">✅</div><div class="hst">Approvazione</div><div class="hsd">Il tuo profilo partner viene verificato e attivato entro 24 ore lavorative. Ricevi una conferma via email con tutti i dettagli.</div></div>
+      <div class="hstep r d3"><div class="hsc">🔗</div><div class="hst">Ricevi il tuo link</div><div class="hsd">Ottieni il link personalizzato con il tuo codice affiliato. Pronto da condividere immediatamente con i tuoi clienti.</div></div>
+      <div class="hstep r d4"><div class="hsc">💰</div><div class="hst">Guadagna</div><div class="hsd">Ogni vendita tracciata genera commissione. Liquidazione trimestrale o quadrimestrale, rendiconto dettagliato incluso.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHO JOIN -->
+<section id="who">
+  <div class="wrap">
+    <div class="r" style="max-width:540px;margin-bottom:56px">
+      <span class="label" id="who-label">A chi è rivolto</span>
+      <h2 class="h2" id="who-h2">Pensato per<br><em>i professionisti del travel.</em></h2>
+      <div class="rule"></div>
+      <p class="sub" id="who-sub">Qualunque sia il tuo ruolo nel settore, Roma Gold Pass ha una soluzione progettata per le tue esigenze specifiche.</p>
+    </div>
+    <div class="ptgrid">
+      <div class="ptcard r d1">
+        <div class="ptic">🏨</div>
+        <div class="ptn">Hotel & Strutture ricettive</div>
+        <div class="ptd">Trasforma il soggiorno dei tuoi ospiti in un'esperienza romana completa. Genera revenue addizionale senza effort operativo — il tuo team condivide il link, il resto avviene in automatico.</div>
+        <div class="ptperks">
+          <div class="ptp">Commissione su ogni acquisto tracciato</div>
+          <div class="ptp">QR code personalizzato per reception e camera</div>
+          <div class="ptp">Materiali stampabili inclusi</div>
+          <div class="ptp">Rendiconto trimestrale dettagliato</div>
+        </div>
+      </div>
+      <div class="ptcard r d2">
+        <div class="ptic">✈️</div>
+        <div class="ptn">Compagnie aeree & OTA</div>
+        <div class="ptd">Aggiungi valore alle prenotazioni verso Roma. Il pass è l'add-on ideale per i passeggeri che vogliono vivere la città al massimo, proposto al momento giusto del funnel.</div>
+        <div class="ptperks">
+          <div class="ptp">Integrazione via link o widget dedicato</div>
+          <div class="ptp">Codici sconto per i tuoi passeggeri</div>
+          <div class="ptp">Report vendite periodici</div>
+          <div class="ptp">API disponibile per livello Enterprise</div>
+        </div>
+      </div>
+      <div class="ptcard r d3">
+        <div class="ptic">🌐</div>
+        <div class="ptn">DMC, Tour operator & Agenzie</div>
+        <div class="ptd">Semplifica la gestione dei tuoi clienti a Roma. Offri un prodotto digitale premium che eleva la qualità percepita dei tuoi pacchetti — senza logistica aggiuntiva.</div>
+        <div class="ptperks">
+          <div class="ptp">Fino a 10 persone per prenotazione</div>
+          <div class="ptp">White-label disponibile (Premium+)</div>
+          <div class="ptp">Supporto dedicato per ogni prenotazione</div>
+          <div class="ptp">Account manager personale</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section id="cta">
+  <div class="ctai r">
+    <span class="ctak" id="cta-kicker">Partnership — zero costi iniziali</span>
+    <h2 class="ctah" id="cta-h">Inizia a<br><em>guadagnare.</em></h2>
+    <p class="ctas" id="cta-sub">Richiedi la tua partnership, ricevi il link dedicato e inizia a generare commissioni automatiche — senza nessun costo iniziale, senza contratti rigidi.</p>
+    <div class="ctab">
+      <a href="https://romagoldpass.com/public/contacts.php" target="_blank" class="btn-gold" id="cta-btn1">Richiedi Partnership →</a>
+      <a href="https://www.romagoldpass.com" target="_blank" class="btn-out-w" id="cta-btn2">Scopri il prodotto ↗</a>
+    </div>
+    <div class="ctac"><span id="cta-contact-text">Hai domande?</span>&nbsp;<a href="https://romagoldpass.com/public/contacts.php" target="_blank" id="cta-contact-link">Scrivici dalla pagina contatti →</a></div>
+  </div>
+  <div style="margin-top:56px;display:flex;justify-content:center;align-items:center"></div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="fg">
+    <div class="fb">
+      <a href="https://www.romagoldpass.com" target="_blank" class="fl"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGgAAACWCAYAAAAyhM3IAAAcJklEQVR42u2de3QcxZXw762q7p7Rw3p6ZD0sg+04YDuYBAMGYiKzGwgOSQggwULI5gkJIXFYQ2xnd89IZHmswWCbZIOTTRzIA77RJgsYDASD7OA4BERsvtiGaG3LyA95JEszkubV3VV1vz/UDYOQbUmQTcLXv3P6zJnp7uqqe+veunWrZgbhvQOOeE/vhUbxv/UGRKNRtmXLFlqxYsXchQsX/v3ChQs/sHDhQtq6dWuPf+691Ov+phXV3d3NAQCqq6tVS0uLhoCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgL9C3vhJTCJimzdvZg0NDbR58+Zj/lRmQ0MDAYBGxHf1t0Cj0Shrbm7GvHqRf0zkWUSEAMD8t4j4jn4iMxaL8cbGxomWhUTE3o16jEcAzHvoOy1DeMI83nXcO3C0zjUOhb3jjuzX+520eTzXCyJCRKS9e/eeZZrmVMaY1lpzwzCMkRczxlQoFDrU0dGxDxG7feEhoppI7/bu0wAA27dvr505c+YsznldOBw2UqlUhjG2749//ONriDiY30CvF9KxykZEIqISADgzl8vp7u7uQ4j4J//ceOuKiLRv376zi4qKyomoAxH3jkOx1N7eXlBfX3+B67p7EPG1cdWDiAQAQCqVepTyyOVyqZGHbdsuEZHjOKlsNvuro0ePLvCVNJEetG/fvmmpVGq54zi7crmczuVyfZlMZnsqldqcyWRezGQyh3K5XDKXyz03NDTUFI1Gzbx247GszXs9z2+L67oql8utHW8PJiIkImxvby9wHCfulWUPDAzcPJZ2++eTyeSFRERSSplIJO4YVz18BWWz2Z8TkfSOjscee6xgzZo11vr160MbN2602traQnv37i1JJBKfU0pl/Ib39/d/dawP9Cv8wgsvTBoaGlrpum6GiMi27Wf6+voWt7W1FeVf/+CDDxYmk8mP2bb9HBGRY9u7HKIFj95ceNq270759cY1My2it7kfX0HneG1xiEgTESUSiUWe0PlYZUNEODg4eLmn6ywRkVJqDwAAIh7X1ebJdqVXF5eIqL+//8Nj7th5hTyUZ0B7vIePSn9/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" alt="Roma Gold Pass" style="height:80px;width:auto;display:block"></a>
+      <div class="ftag" id="ftag">La piattaforma digitale all-in-one per vivere Roma senza stress.</div>
+      <a href="https://www.romagoldpass.com" target="_blank" class="fweb">www.romagoldpass.com ↗</a>
+      <div class="fsoc">
+        <a href="https://instagram.com/romagoldpass" target="_blank" class="fs" title="Instagram">
+          <svg width="13" height="13" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+        <a href="https://www.facebook.com/romagoldpass" target="_blank" class="fs" title="Facebook">
+          <svg width="13" height="13" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+        <a href="mailto:info@romagoldpass.com" class="fs" title="Email">
+          <svg width="13" height="13" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="fcol">
+      <h4 id="fcol1-h">I Pass</h4>
+      <a href="#passes">Gold 48h — da €120</a>
+      <a href="#passes">Gold 72h — da €145</a>
+      <a href="#passes">Venus 48h — da €70</a>
+      <a href="#passes">Venus 72h — da €125</a>
+      <a href="#passes">Ciao 24h — da €10</a>
+      <a href="#passes">Caesar 24h — da €40</a>
+    </div>
+    <div class="fcol">
+      <h4 id="fcol2-h">Partner</h4>
+      <a href="#partner" id="fcol2-l1">Come funziona</a>
+      <a href="#commission" id="fcol2-l2">Commissioni</a>
+      <a href="#who" id="fcol2-l3">Chi può aderire</a>
+      <a href="https://romagoldpass.com/public/contacts.php" target="_blank" id="fcol2-l4">Richiedi partnership</a>
+    </div>
+    <div class="fcol">
+      <h4 id="fcol3-h">Contatti</h4>
+      <a href="mailto:info@romagoldpass.com">info@romagoldpass.com</a>
+      <a href="https://romagoldpass.com/public/contacts.php" target="_blank" id="fcol3-l2">Contattaci per info</a>
+      <a href="https://www.romagoldpass.com" target="_blank">romagoldpass.com</a>
+    </div>
+  </div>
+  <div class="fbot">
+    <div class="fbl" id="fbot-copy">© 2025 Roma Gold Pass — P.IVA 17084941008. Tutti i diritti riservati.</div>
+    <div class="fbr">
+      <a href="https://www.romagoldpass.com/privacy_policy.php" target="_blank" id="fbot-l1">Privacy Policy</a>
+      <a href="https://www.romagoldpass.com/terms_conditions.php" target="_blank" id="fbot-l2">Termini e Condizioni</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('v'); });
+  }, { threshold: 0.07, rootMargin: '0px 0px -30px 0px' });
+  document.querySelectorAll('.r').forEach(el => obs.observe(el));
+
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.style.padding = window.scrollY > 50 ? '11px 52px' : '18px 52px';
+  }, { passive: true });
+
+  // ── BILINGUAL SYSTEM ──────────────────────────────────────────────
+  const translations = {
+    it: {
+      // NAV
+      'nav-passes': 'I Pass',
+      'nav-bonus': 'Bonus Digitali',
+      'nav-partner': 'Partner',
+      'nav-commission': 'Commissioni',
+      'nav-site': 'romagoldpass.com',
+      'nav-cta': 'Vai al sito',
+      // HERO
+      'hero-badge': 'Partner Program — Presentazione',
+      'hero-h1': 'L\'esperienza romana completa,<br><em>per i tuoi clienti.</em>',
+      'hero-sub': 'Roma Gold Pass è la piattaforma digitale che trasforma l\'esperienza romana dei tuoi clienti — e genera commissioni automatiche per te, con un semplice link dedicato. Zero costi iniziali, zero complessità.',
+      'hero-btn1': 'Richiedi Partnership →',
+      'hero-btn2': 'Scopri i Pass',
+      'met1': 'Pass disponibili',
+      'met2': 'Commissione media',
+      'met3': 'Link tracciato',
+      'met4': 'Lingue supportate',
+      'met5': 'Supporto clienti',
+      // WHAT
+      'what-label': 'Il prodotto',
+      'what-h2': 'Una piattaforma.<br><em>Tutto incluso.</em>',
+      'what-sub': 'Roma Gold Pass è la soluzione digitale all-in-one per chi visita Roma. Musei, trasporti, ristoranti selezionati e supporto locale — tutto accessibile da un\'unica app in 6 lingue. Ogni cliente può costruire la propria esperienza in autonomia, partendo dalla base del pass scelto e personalizzandola secondo i propri interessi.',
+      'what-site-btn': 'Visita romagoldpass.com ↗',
+      'wt1': 'Siti UNESCO — Prenotazioni riservate con slot orario',
+      'wd1': 'Colosseo, Foro Romano, Palatino, Musei Vaticani, Cappella Sistina, Pantheon, Castel Sant\'Angelo. Prenotazioni garantite, zero code.',
+      'wt2': 'Trasporto pubblico integrato',
+      'wd2': 'Metro, bus e tram ATAC illimitati per tutta la durata del pass. Validazione digitale, nessun biglietto cartaceo.',
+      'wt3': 'Food Card & Ristoranti selezionati',
+      'wd3': 'Sconti esclusivi in trattorie e ristoranti romani autentici. Una guida gastronomica curata da esperti locali, aggiornata continuamente.',
+      'wt4': 'Itinerari & Esperienze',
+      'wd4': 'Percorsi tematici, esperienze esclusive, accessi speciali. Roma come la vivono i romani, non come appare nelle guide tradizionali.',
+      'wt5': 'Supporto dedicato h24 — 6 lingue',
+      'wd5': 'Assistenza reale (non bot) sempre disponibile. Supporto in italiano, inglese, francese, spagnolo, tedesco e portoghese.',
+      // PASSES
+      'passes-label': 'I pass ufficiali',
+      'passes-h2': 'Sei pass. <em>Ogni stile<br>di viaggio.</em>',
+      'passes-sub': 'Due linee, tre durate, sei opzioni. I tuoi clienti scelgono in autonomia il pass più adatto al loro soggiorno — direttamente online, dal loro dispositivo.',
+      'leg1': 'Linea Gold — Vaticani inclusi',
+      'leg2': 'Linea Venus — Hop-on hop-off incluso',
+      'leg3': 'Linea Entry — Flessibili, acquistabili last-minute',
+      'pfrom': 'da',
+      'pcta': 'Proponi ai tuoi clienti →',
+      'pop-tag': 'Più popolare',
+      // BONUS
+      'bonus-label': 'Valore aggiunto per i tuoi clienti',
+      'bonus-h2': 'Con ogni pass,<br><em>una guida digitale completa.</em>',
+      'bonus-sub': 'Ogni cliente che acquista un Roma Gold Pass riceve immediatamente accesso a un pacchetto di risorse digitali esclusive. Non solo un biglietto: un vero compagno di viaggio per vivere Roma senza imprevisti.',
+      'bonus-note': 'Questo bonus rafforza il valore percepito del prodotto che proponi ai tuoi clienti e contribuisce a differenziare la tua offerta da quella dei competitor.',
+      'bt1': 'Mappe interattive offline',
+      'bd1': 'Mappe di Roma ottimizzate per ogni pass, con tutti i siti inclusi, le fermate metro e i punti di interesse vicini. Funzionano anche senza connessione.',
+      'bt2': 'Guida ristoranti curata',
+      'bd2': 'Selezione di ristoranti autentici divisi per quartiere e cucina, con indicazioni su orari, prenotazioni e sconti attivi con il pass.',
+      'bt3': 'Tips & Consigli locali',
+      'bd3': 'Suggerimenti pratici su come muoversi, cosa evitare, i migliori orari per visitare i siti e i quartieri più autentici lontani dal turismo di massa.',
+      'bt4': 'Itinerari tematici',
+      'bd4': 'Percorsi pre-costruiti per diversi profili di viaggiatore: famiglie, coppie, appassionati d\'arte, fotografi, foodies. Adattabili alla durata del pass scelto.',
+      'bt5': 'Accesso digitale immediato — nessuna stampa',
+      'bd5': 'Tutto viene consegnato digitalmente via email e app al momento dell\'acquisto. I tuoi clienti trovano ogni informazione in un unico posto, consultabile dal proprio smartphone in qualsiasi momento del viaggio.',
+      // PARTNER
+      'partner-label': 'Partner Program',
+      'partner-h2': 'Un link e un codice.<br><em>Due strumenti, una sola partnership.</em>',
+      'partner-sub': 'Ogni partner riceve due strumenti esclusivi: un link personalizzato e tracciato che genera commissioni automatiche ad ogni acquisto, e un codice sconto dedicato da offrire ai propri clienti con la massima libertà di utilizzo.',
+      'partner-desc': 'Lavoriamo con hotel, compagnie aeree, agenzie di viaggio, operatori DMC, concierge e travel advisor. Il programma partner è progettato per essere il più semplice possibile: il tuo cliente clicca il tuo link, acquista in autonomia, e la commissione viene registrata automaticamente.',
+      'who1-name': 'Hotel & Resort',
+      'who1-desc': 'Il pass come servizio premium per gli ospiti, dal check-in',
+      'who2-name': 'Compagnie aeree',
+      'who2-desc': 'Add-on ideale per i passeggeri in rotta su Roma',
+      'who3-name': 'Agenzie di viaggio',
+      'who3-desc': 'Inserisci il pass nei pacchetti Roma e aumenta il valore',
+      'who4-name': 'Concierge & Advisor',
+      'who4-desc': 'Strumenti white-label per clienti premium',
+      'who5-name': 'DMC & Tour operator',
+      'who5-desc': 'Condizioni B2B dedicate al volume e alla stagionalità',
+      'who6-name': 'Piattaforme digitali',
+      'who6-desc': 'Integrazione via link, widget o API (livello Enterprise)',
+      'cbox-title': 'Come funziona<br><em>il tuo link dedicato</em>',
+      'cs1t': 'Contattaci per un incontro',
+      'cs1d': 'Scrivici per fissare un incontro conoscitivo. Ti risponderemo entro 24 ore lavorative.',
+      'cs2t': 'Ricevi il tuo link e il tuo codice sconto',
+      'cs2d': 'Ottieni un link personalizzato con tracciamento automatico e un codice sconto esclusivo da condividere con i tuoi clienti come preferisci: in reception, via email, nelle newsletter o sui tuoi canali social.',
+      'cs3t': 'Il cliente acquista in autonomia',
+      'cs3d': 'Il tuo cliente segue il link o inserisce il codice sconto, sceglie il pass più adatto e completa l\'acquisto direttamente sul nostro sito. Nessun passaggio manuale richiesto da parte tua.',
+      'cs4t': 'La commissione è tua',
+      'cs4d': 'Ogni vendita tracciata viene registrata e liquidata secondo il piano concordato, trimestralmente, quadrimestralmente o sulla base di accordi specifici con il tuo livello partner.',
+      'link-lbl': 'Esempio link partner',
+      // COMMISSION
+      'comm-label': 'Struttura commissionale',
+      'comm-h2': 'Commissioni chiare.<br><em>Pagamenti garantiti.</em>',
+      'comm-note': '<strong style="color:var(--ch)">Come vengono liquidate le commissioni.</strong> Le commissioni vengono corrisposte con cadenza <strong>trimestrale</strong> o <strong>quadrimestrale</strong>, in base all\'accordo stipulato al momento dell\'attivazione del profilo partner. Per volumi elevati o situazioni particolari è possibile concordare modalità di pagamento personalizzate. Ogni liquidazione è accompagnata da un rendiconto dettagliato delle vendite generate.',
+      'th1':'Livello partner','th2':'Vendite / periodo','th3':'Commissione','th4':'Liquidazione','th5':'Incluso nel livello',
+      'tier1-name':'Starter','tier1-badge':'Ingresso','tier1-vol':'1 – 100 pass / mese','tier1-pay':'Trimestrale','tier1-pay2':'o quadrimestrale','tier1-inc':'Link dedicato, codice sconto personalizzato, rendiconto vendite, materiali digitali',
+      'tier2-name':'Growth','tier2-badge':'Consigliato','tier2-vol':'100 – 200 pass / mese','tier2-pay':'Trimestrale','tier2-pay2':'o quadrimestrale','tier2-inc':'Kit marketing brandizzato, codice sconto dedicato, supporto prioritario, report mensili',
+      'tier3-name':'Elite','tier3-badge':'Volume','tier3-vol':'Oltre 200 pass / mese','tier3-pay':'Previo accordo','tier3-pay2':'condizioni personalizzate','tier3-inc':'Account manager dedicato, white-label, integrazione API',
+      'pay-note-title': 'Rendiconto trasparente ad ogni liquidazione',
+      'pay-note-desc': 'Ogni pagamento è accompagnato da un documento dettagliato che riporta numero di pass venduti, tipologia, data di acquisto e importo commissione maturato. Nessuna cifra approssimativa, solo dati precisi e verificabili. Per il livello Premium ed Elite è disponibile accesso a report periodici con analisi delle vendite e trend per ottimizzare la proposta ai tuoi clienti.',
+      'promo-title': 'Il tuo codice sconto personalizzato',
+      'promo-desc': 'Oltre al link tracciato, ogni partner riceve un codice sconto esclusivo da gestire in completa autonomia. Puoi usarlo per premiare i tuoi clienti abituali, inserirlo in una campagna promozionale, offrirlo come benefit al check-in o proporlo in qualsiasi altro modo ritieni più efficace per il tuo business. La percentuale di sconto e le condizioni vengono concordate insieme al momento dell\'attivazione della partnership, su misura per il tuo profilo.',
+      // HOW
+      'how-label': 'Come iniziare',
+      'how-h2': 'Attivo in<br><em>meno di 24 ore.</em>',
+      'hs1t': 'Contattaci per un incontro','hs1d': 'Due minuti per inviarci i dati della tua struttura o azienda. Nessun contratto rigido, nessun costo di attivazione.',
+      'hs2t': 'Approvazione','hs2d': 'Il tuo profilo partner viene verificato e attivato entro 24 ore lavorative. Ricevi una conferma via email con tutti i dettagli.',
+      'hs3t': 'Ricevi il tuo link','hs3d': 'Ottieni il link personalizzato con il tuo codice affiliato. Pronto da condividere immediatamente con i tuoi clienti.',
+      'hs4t': 'Guadagna','hs4d': 'Ogni vendita tracciata genera commissione. Liquidazione trimestrale o quadrimestrale, rendiconto dettagliato incluso.',
+      // WHO JOIN
+      'who-label': 'A chi è rivolto',
+      'who-h2': 'Pensato per<br><em>i professionisti del travel.</em>',
+      'who-sub': 'Qualunque sia il tuo ruolo nel settore, Roma Gold Pass ha una soluzione progettata per le tue esigenze specifiche.',
+      'pt1-name':'Hotel & Strutture ricettive','pt1-desc':'Trasforma il soggiorno dei tuoi ospiti in un\'esperienza romana completa. Genera revenue addizionale senza effort operativo — il tuo team condivide il link, il resto avviene in automatico.','pt1-p1':'Commissione su ogni acquisto tracciato','pt1-p2':'QR code personalizzato per reception e camera','pt1-p3':'Materiali stampabili inclusi','pt1-p4':'Rendiconto trimestrale dettagliato',
+      'pt2-name':'Compagnie aeree & OTA','pt2-desc':'Aggiungi valore alle prenotazioni verso Roma. Il pass è l\'add-on ideale per i passeggeri che vogliono vivere la città al massimo, proposto al momento giusto del funnel.','pt2-p1':'Integrazione via link o widget dedicato','pt2-p2':'Codici sconto per i tuoi passeggeri','pt2-p3':'Report vendite periodici','pt2-p4':'API disponibile per livello Enterprise',
+      'pt3-name':'DMC, Tour operator & Agenzie','pt3-desc':'Semplifica la gestione dei tuoi clienti a Roma. Offri un prodotto digitale premium che eleva la qualità percepita dei tuoi pacchetti — senza logistica aggiuntiva.','pt3-p1':'Fino a 10 persone per prenotazione','pt3-p2':'White-label disponibile (Premium+)','pt3-p3':'Supporto dedicato per ogni prenotazione','pt3-p4':'Account manager personale',
+      // CTA
+      'cta-kicker': 'Partnership — zero costi iniziali',
+      'cta-h': 'Inizia a<br><em>guadagnare.</em>',
+      'cta-sub': 'Richiedi la tua partnership, ricevi il link dedicato e inizia a generare commissioni automatiche — senza nessun costo iniziale, senza contratti rigidi.',
+      'cta-btn1': 'Richiedi Partnership →',
+      'cta-btn2': 'Scopri il prodotto ↗',
+      'cta-contact': 'Hai domande?',
+      'cta-contact-link': 'Scrivici dalla pagina contatti →',
+      // FOOTER
+      'ftag': 'La piattaforma digitale all-in-one per vivere Roma senza stress.',
+      'fcol1-h': 'I Pass',
+      'fcol2-h': 'Partner',
+      'fcol2-l1': 'Come funziona','fcol2-l2': 'Commissioni','fcol2-l3': 'Chi può aderire','fcol2-l4': 'Richiedi partnership',
+      'fcol3-h': 'Contatti',
+      'fcol3-l2': 'Contattaci per info',
+      'fbot-copy': '© 2025 Roma Gold Pass — P.IVA 17084941008. Tutti i diritti riservati.',
+      'fbot-l1': 'Privacy Policy', 'fbot-l2': 'Termini e Condizioni',
+    },
+    en: {
+      'nav-passes': 'The Passes',
+      'nav-bonus': 'Digital Bonuses',
+      'nav-partner': 'Partners',
+      'nav-commission': 'Commissions',
+      'nav-site': 'romagoldpass.com',
+      'nav-cta': 'Visit Website',
+      'hero-badge': 'Partner Program — Presentation',
+      'hero-h1': 'All your Rome experience,<br><em>in one place.</em>',
+      'hero-sub': 'Roma Gold Pass is the digital platform that transforms your clients\' Roman experience — and automatically generates commissions for you, with a simple dedicated link. Zero upfront costs, zero complexity.',
+      'hero-btn1': 'Request Partnership →',
+      'hero-btn2': 'Explore the Passes',
+      'met1': 'Available passes',
+      'met2': 'Average commission',
+      'met3': 'Tracked link',
+      'met4': 'Supported languages',
+      'met5': 'Client support',
+      'what-label': 'The product',
+      'what-h2': 'One platform.<br><em>Everything included.</em>',
+      'what-sub': 'Roma Gold Pass is the all-in-one digital solution for visitors to Rome. Museums, transport, selected restaurants and local support — all accessible from a single app in 6 languages. Each client can build their own experience independently, starting from their chosen pass and customising it to their interests.',
+      'what-site-btn': 'Visit romagoldpass.com ↗',
+      'wt1': 'UNESCO Sites — Reserved bookings with time slots',
+      'wd1': 'Colosseum, Roman Forum, Palatine Hill, Vatican Museums, Sistine Chapel, Pantheon, Castel Sant\'Angelo. Guaranteed reservations, zero queues.',
+      'wt2': 'Integrated public transport',
+      'wd2': 'Unlimited ATAC metro, bus and tram for the entire duration of the pass. Digital validation, no paper tickets.',
+      'wt3': 'Food Card & Selected restaurants',
+      'wd3': 'Exclusive discounts at authentic Roman trattorias and restaurants. A gastronomic guide curated by local experts, continuously updated.',
+      'wt4': 'Itineraries & Experiences',
+      'wd4': 'Thematic routes, exclusive experiences, special access. Rome as Romans live it, not as traditional guidebooks describe it.',
+      'wt5': 'Dedicated 24/7 support — 6 languages',
+      'wd5': 'Real human assistance (not bots) always available. Support in Italian, English, French, Spanish, German and Portuguese.',
+      'passes-label': 'Official passes',
+      'passes-h2': 'Six passes. <em>Every travel<br>style.</em>',
+      'passes-sub': 'Two lines, three durations, six options. Your clients independently choose the most suitable pass for their stay — directly online, from their device.',
+      'leg1': 'Gold Line — Vatican included',
+      'leg2': 'Venus Line — Hop-on hop-off included',
+      'leg3': 'Entry Line — Flexible, last-minute purchase',
+      'pfrom': 'from',
+      'pcta': 'Recommend to your clients →',
+      'pop-tag': 'Most popular',
+      'bonus-label': 'Added value for your clients',
+      'bonus-h2': 'With every pass,<br><em>a complete digital guide.</em>',
+      'bonus-sub': 'Every client who purchases a Roma Gold Pass instantly receives access to an exclusive package of digital resources. Not just a ticket: a true travel companion for experiencing Rome without surprises.',
+      'bonus-note': 'This bonus strengthens the perceived value of the product you offer your clients and helps differentiate your offering from competitors.',
+      'bt1': 'Offline interactive maps',
+      'bd1': 'Rome maps optimised for each pass, with all included sites, metro stops and nearby points of interest. They work even without a connection.',
+      'bt2': 'Curated restaurant guide',
+      'bd2': 'Selection of authentic restaurants divided by neighbourhood and cuisine, with information on opening hours, reservations and active discounts with the pass.',
+      'bt3': 'Tips & Local advice',
+      'bd3': 'Practical tips on how to get around, what to avoid, the best times to visit sites and the most authentic neighbourhoods away from mass tourism.',
+      'bt4': 'Thematic itineraries',
+      'bd4': 'Pre-built routes for different traveller profiles: families, couples, art lovers, photographers, foodies. Adaptable to the duration of the chosen pass.',
+      'bt5': 'Immediate digital access — no printing required',
+      'bd5': 'Everything is delivered digitally via email and app at the time of purchase. Your clients find all information in one place, accessible from their smartphone at any point of the trip.',
+      'partner-label': 'Partner Program',
+      'partner-h2': 'A link and a code.<br><em>Two tools, one partnership.</em>',
+      'partner-sub': 'Every partner receives two exclusive tools: a personalised tracked link that automatically generates commissions on every purchase, and a dedicated discount code to offer their clients with full freedom of use.',
+      'partner-desc': 'We work with hotels, airlines, travel agencies, DMC operators, concierge services and travel advisors. The partner programme is designed to be as simple as possible: your client clicks your link, purchases independently, and the commission is recorded automatically.',
+      'who1-name': 'Hotels & Resorts',
+      'who1-desc': 'The pass as a premium service for guests, from check-in',
+      'who2-name': 'Airlines',
+      'who2-desc': 'The ideal add-on for passengers heading to Rome',
+      'who3-name': 'Travel agencies',
+      'who3-desc': 'Include the pass in your Rome packages and increase value',
+      'who4-name': 'Concierge & Advisors',
+      'who4-desc': 'White-label tools for premium clients',
+      'who5-name': 'DMC & Tour operators',
+      'who5-desc': 'B2B terms tailored to volume and seasonality',
+      'who6-name': 'Digital platforms',
+      'who6-desc': 'Integration via link, widget or API (Enterprise level)',
+      'cbox-title': 'How your<br><em>dedicated link works</em>',
+      'cs1t': 'Contact us for a meeting',
+      'cs1d': 'Write to us to arrange an introductory meeting. We will get back to you within 24 working hours.',
+      'cs2t': 'Receive your link and discount code',
+      'cs2d': 'You receive a personalised link with automatic tracking and an exclusive discount code to share with your clients however you prefer: at reception, via email, in newsletters or on your social channels.',
+      'cs3t': 'The client purchases independently',
+      'cs3d': 'Your client follows the link or enters the discount code, chooses the most suitable pass and completes the purchase directly on our website. No manual steps required on your part.',
+      'cs4t': 'The commission is yours',
+      'cs4d': 'Every tracked sale is recorded and paid according to the agreed plan — quarterly, every four months, or based on specific arrangements with your partner level.',
+      'link-lbl': 'Example partner link',
+      'comm-label': 'Commission structure',
+      'comm-h2': 'Clear commissions.<br><em>Guaranteed payments.</em>',
+      'comm-note': '<strong style="color:var(--ch)">How commissions are paid.</strong> Commissions are paid on a <strong>quarterly</strong> or <strong>four-monthly</strong> basis, depending on the agreement made when the partner profile is activated. For high volumes or special situations, customised payment arrangements can be negotiated. Each payment is accompanied by a detailed sales report.',
+      'th1':'Partner level','th2':'Sales / period','th3':'Commission','th4':'Payment','th5':'Included in level',
+      'tier1-name':'Starter','tier1-badge':'Entry','tier1-vol':'1 – 100 passes / month','tier1-pay':'Quarterly','tier1-pay2':'or every 4 months','tier1-inc':'Dedicated link, personalised discount code, sales report, digital materials',
+      'tier2-name':'Growth','tier2-badge':'Recommended','tier2-vol':'100 – 200 passes / month','tier2-pay':'Quarterly','tier2-pay2':'or every 4 months','tier2-inc':'Branded marketing kit, dedicated discount code, priority support, monthly reports',
+      'tier3-name':'Elite','tier3-badge':'Volume','tier3-vol':'Over 200 passes / month','tier3-pay':'By arrangement','tier3-pay2':'personalised terms','tier3-inc':'Dedicated account manager, white-label, API integration',
+      'pay-note-title': 'Transparent report with every payment',
+      'pay-note-desc': 'Every payment comes with a detailed document showing the number of passes sold, type, purchase date and commission earned. No approximate figures — only precise, verifiable data. For Premium and Elite levels, access to periodic reports with sales analysis and trends is available to help optimise your client offering.',
+      'promo-title': 'Your personalised discount code',
+      'promo-desc': 'In addition to the tracked link, every partner receives an exclusive discount code to manage with complete autonomy. You can use it to reward loyal clients, include it in a promotional campaign, offer it as a benefit at check-in or propose it in any other way you consider most effective for your business. The discount percentage and conditions are agreed together at the time of partnership activation, tailored to your profile.',
+      'how-label': 'How to start',
+      'how-h2': 'Active in<br><em>less than 24 hours.</em>',
+      'hs1t':'Contact us for a meeting','hs1d':'Two minutes to send us your details. No rigid contracts, no activation costs.',
+      'hs2t':'Approval','hs2d':'Your partner profile is verified and activated within 24 working hours. You receive a confirmation email with all the details.',
+      'hs3t':'Receive your link','hs3d':'Get your personalised link with your affiliate code. Ready to share immediately with your clients.',
+      'hs4t':'Earn automatically','hs4d':'Every tracked sale generates a commission. Quarterly or four-monthly payment, detailed report included.',
+      'who-label': 'Who it is for',
+      'who-h2': 'Designed for<br><em>travel professionals.</em>',
+      'who-sub': 'Whatever your role in the sector, Roma Gold Pass has a solution designed for your specific needs.',
+      'pt1-name':'Hotels & Accommodation','pt1-desc':'Transform your guests\' stay into a complete Roman experience. Generate additional revenue without operational effort — your team shares the link, everything else happens automatically.','pt1-p1':'Commission on every tracked purchase','pt1-p2':'Personalised QR code for reception and rooms','pt1-p3':'Printable materials included','pt1-p4':'Detailed quarterly report',
+      'pt2-name':'Airlines & OTAs','pt2-desc':'Add value to bookings to Rome. The pass is the ideal add-on for passengers who want to experience the city to the fullest, proposed at the right moment in the funnel.','pt2-p1':'Integration via dedicated link or widget','pt2-p2':'Discount codes for your passengers','pt2-p3':'Periodic sales reports','pt2-p4':'API available for Enterprise level',
+      'pt3-name':'DMC, Tour operators & Agencies','pt3-desc':'Simplify the management of your clients in Rome. Offer a premium digital product that elevates the perceived quality of your packages — with no additional logistics.','pt3-p1':'Up to 10 people per booking','pt3-p2':'White-label available (Premium+)','pt3-p3':'Dedicated support for every booking','pt3-p4':'Personal account manager',
+      'cta-kicker': 'Partnership — zero upfront costs',
+      'cta-h': 'Start<br><em>earning.</em>',
+      'cta-sub': 'Request your partnership, receive the dedicated link and start generating automatic commissions — with no upfront costs, no rigid contracts.',
+      'cta-btn1': 'Request Partnership →',
+      'cta-btn2': 'Explore the product ↗',
+      'cta-contact': 'Have questions?',
+      'cta-contact-link': 'Contact us here →',
+      'ftag': 'The all-in-one digital platform for experiencing Rome without stress.',
+      'fcol1-h': 'The Passes',
+      'fcol2-h': 'Partners',
+      'fcol2-l1': 'How it works','fcol2-l2': 'Commissions','fcol2-l3': 'Who can join','fcol2-l4': 'Request partnership',
+      'fcol3-h': 'Contact',
+      'fcol3-l2': 'Contact us for info',
+      'fbot-copy': '© 2025 Roma Gold Pass — VAT 17084941008. All rights reserved.',
+      'fbot-l1': 'Privacy Policy', 'fbot-l2': 'Terms & Conditions',
+    }
+  };
+
+  let currentLang = 'it';
+
+  function setLang(lang) {
+    if (lang === currentLang) return;
+    currentLang = lang;
+    const isEn = lang === 'en';
+
+    // Update button states
+    const btnIt = document.getElementById('btn-it');
+    const btnEn = document.getElementById('btn-en');
+    btnIt.style.background = isEn ? 'transparent' : 'var(--ch)';
+    btnIt.querySelector('span:last-child').style.color = isEn ? 'var(--ch4)' : '#fff';
+    btnEn.style.background = isEn ? 'var(--ch)' : 'transparent';
+    btnEn.querySelector('span:last-child').style.color = isEn ? '#fff' : 'var(--ch4)';
+
+    document.documentElement.lang = lang;
+    const t = translations[lang];
+
+    function s(id, html) {
+      const el = document.getElementById(id);
+      if (el) el.innerHTML = html;
+    }
+    function st(id, text) {
+      const el = document.getElementById(id);
+      if (el) el.textContent = text;
+    }
+
+    // Nav
+    const nlinks = document.querySelectorAll('.nlinks a');
+    if(nlinks[0]) nlinks[0].textContent = t['nav-passes'];
+    if(nlinks[1]) nlinks[1].textContent = t['nav-bonus'];
+    if(nlinks[2]) nlinks[2].textContent = t['nav-partner'];
+    if(nlinks[3]) nlinks[3].textContent = t['nav-commission'];
+    if(nlinks[4]) nlinks[4].textContent = t['nav-site'];
+    const navCta = document.querySelector('nav .btn-dark');
+    if(navCta) navCta.textContent = t['nav-cta'];
+
+    // Hero
+    s('hero-badge-text', t['hero-badge']);
+    s('hero-h1', t['hero-h1']);
+    s('hero-sub', t['hero-sub']);
+    s('hero-btn1', t['hero-btn1']);
+    s('hero-btn2', t['hero-btn2']);
+    const mets = document.querySelectorAll('.metl');
+    const metKeys = ['met1','met2','met3','met4','met5'];
+    mets.forEach((m,i) => { if(metKeys[i]) m.textContent = t[metKeys[i]]; });
+
+    // What
+    s('what-label', t['what-label']);
+    s('what-h2', t['what-h2']);
+    s('what-sub', t['what-sub']);
+    s('what-site-btn', t['what-site-btn']);
+    const wtits = document.querySelectorAll('.wtit');
+    const wdscs = document.querySelectorAll('.wdsc');
+    for(let i=1;i<=5;i++){
+      if(wtits[i-1]) wtits[i-1].textContent = t['wt'+i];
+      if(wdscs[i-1]) wdscs[i-1].textContent = t['wd'+i];
+    }
+
+    // Passes
+    s('passes-label', t['passes-label']);
+    s('passes-h2', t['passes-h2']);
+    s('passes-sub', t['passes-sub']);
+    const legs = document.querySelectorAll('.ll');
+    if(legs[0]) legs[0].querySelector('span') ? legs[0].lastChild.textContent = t['leg1'] : null;
+    document.querySelectorAll('.ll').forEach((ll,i) => {
+      const txt = ll.childNodes[ll.childNodes.length-1];
+      if(txt && i<3) txt.textContent = ' ' + t['leg'+(i+1)];
+    });
+    document.querySelectorAll('.pfrom').forEach(el => el.textContent = t['pfrom']);
+    document.querySelectorAll('.pop-tag').forEach(el => el.textContent = t['pop-tag']);
+    document.querySelectorAll('.pcta-g, .pcta-d, .pcta-v, .pcta-c').forEach(el => el.textContent = t['pcta']);
+
+    // Bonus
+    s('bonus-label', t['bonus-label']);
+    s('bonus-h2', t['bonus-h2']);
+    s('bonus-sub', t['bonus-sub']);
+    s('bonus-note', t['bonus-note']);
+    const btits = document.querySelectorAll('.bcard-title');
+    const bdscs = document.querySelectorAll('.bcard-desc');
+    for(let i=1;i<=5;i++){
+      if(btits[i-1]) btits[i-1].textContent = t['bt'+i];
+      if(bdscs[i-1]) bdscs[i-1].textContent = t['bd'+i];
+    }
+
+    // Partner
+    s('partner-label', t['partner-label']);
+    s('partner-h2', t['partner-h2']);
+    s('partner-sub', t['partner-sub']);
+    s('partner-desc', t['partner-desc']);
+    const wnames = document.querySelectorAll('.wcn');
+    const wdescs = document.querySelectorAll('.wcd');
+    for(let i=1;i<=6;i++){
+      if(wnames[i-1]) wnames[i-1].textContent = t['who'+i+'-name'];
+      if(wdescs[i-1]) wdescs[i-1].textContent = t['who'+i+'-desc'];
+    }
+    s('cbox-title', t['cbox-title']);
+    const cstitles = document.querySelectorAll('.cstt');
+    const csdesc = document.querySelectorAll('.cstd');
+    for(let i=1;i<=4;i++){
+      if(cstitles[i-1]) cstitles[i-1].textContent = t['cs'+i+'t'];
+      if(csdesc[i-1]) csdesc[i-1].textContent = t['cs'+i+'d'];
+    }
+    s('link-lbl', t['link-lbl']);
+
+    // Commission
+    s('comm-label', t['comm-label']);
+    s('comm-h2', t['comm-h2']);
+    s('comm-note', t['comm-note']);
+    const ths = document.querySelectorAll('.cth');
+    for(let i=1;i<=5;i++){ if(ths[i-1]) ths[i-1].textContent = t['th'+i]; }
+    for(let i=1;i<=3;i++){
+      s('tier'+i+'-name-el', t['tier'+i+'-name']);
+      s('tier'+i+'-badge-el', t['tier'+i+'-badge']);
+      s('tier'+i+'-vol-el', t['tier'+i+'-vol']);
+      s('tier'+i+'-pay-el', t['tier'+i+'-pay']);
+      s('tier'+i+'-pay2-el', t['tier'+i+'-pay2']);
+      s('tier'+i+'-inc-el', t['tier'+i+'-inc']);
+    }
+    s('pay-note-title', t['pay-note-title']);
+    s('pay-note-desc', t['pay-note-desc']);
+    s('promo-title', t['promo-title']);
+    s('promo-desc', t['promo-desc']);
+
+    // How
+    s('how-label', t['how-label']);
+    s('how-h2', t['how-h2']);
+    const hstitles = document.querySelectorAll('.hst');
+    const hsdescs = document.querySelectorAll('.hsd');
+    for(let i=1;i<=4;i++){
+      if(hstitles[i-1]) hstitles[i-1].textContent = t['hs'+i+'t'];
+      if(hsdescs[i-1]) hsdescs[i-1].textContent = t['hs'+i+'d'];
+    }
+
+    // Who join
+    s('who-label', t['who-label']);
+    s('who-h2', t['who-h2']);
+    s('who-sub', t['who-sub']);
+    const ptnames = document.querySelectorAll('.ptn');
+    const ptdescs = document.querySelectorAll('.ptd');
+    const ptperks = document.querySelectorAll('.ptperks');
+    for(let i=1;i<=3;i++){
+      if(ptnames[i-1]) ptnames[i-1].textContent = t['pt'+i+'-name'];
+      if(ptdescs[i-1]) ptdescs[i-1].textContent = t['pt'+i+'-desc'];
+      if(ptperks[i-1]){
+        const ps = ptperks[i-1].querySelectorAll('.ptp');
+        for(let j=1;j<=4;j++){ if(ps[j-1]) ps[j-1].textContent = t['pt'+i+'-p'+j]; }
+      }
+    }
+
+    // CTA
+    s('cta-kicker', t['cta-kicker']);
+    s('cta-h', t['cta-h']);
+    s('cta-sub', t['cta-sub']);
+    s('cta-btn1', t['cta-btn1']);
+    s('cta-btn2', t['cta-btn2']);
+    s('cta-contact-text', t['cta-contact']);
+    s('cta-contact-link', t['cta-contact-link']);
+
+    // Footer
+    s('ftag', t['ftag']);
+    s('fcol1-h', t['fcol1-h']);
+    s('fcol2-h', t['fcol2-h']);
+    s('fcol2-l1', t['fcol2-l1']); s('fcol2-l2', t['fcol2-l2']); s('fcol2-l3', t['fcol2-l3']); s('fcol2-l4', t['fcol2-l4']);
+    s('fcol3-h', t['fcol3-h']);
+    s('fcol3-l2', t['fcol3-l2']);
+    s('fbot-copy', t['fbot-copy']);
+    s('fbot-l1', t['fbot-l1']); s('fbot-l2', t['fbot-l2']);
+  }
+</script>
+</body>
+</html>
